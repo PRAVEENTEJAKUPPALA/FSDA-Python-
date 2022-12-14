@@ -1,0 +1,44 @@
+1. Write a Python program to convert kilometers to miles?
+   n=float(input("enter the kilometers"))
+   p=n*0.631371
+   print("Miles ",p)
+   
+2.Write a Python program to convert Celsius to Fahrenheit?
+  c=float(input("enter the celsius temperature"))
+  f=c*(9/5)+32
+  print("tempeature in farenhiet ",round(f,2))
+  
+3. Write a Python program to display calendar?
+    import calendar
+    print(calendar.calendar(2022))
+	
+4. Write a Python program to solve quadratic equation?
+
+from math import sqrt
+
+print("Quadratic function : (a * x^2) + b*x + c")
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
+
+r = b**2 - 4*a*c
+
+if r > 0:
+    num_roots = 2
+    x1 = (((-b) + sqrt(r))/(2*a))     
+    x2 = (((-b) - sqrt(r))/(2*a))
+    print("There are 2 roots: %f and %f" % (x1, x2))
+elif r == 0:
+    num_roots = 1
+    x = (-b) / 2*a
+    print("There is one root: ", x)
+else:
+    num_roots = 0
+    print("No roots")
+	
+5. Write a Python program to swap two variables without temp variable?
+a=int(input("enter the number"))
+b=int(input("enter the number"))
+print("before change a=",a,"b=",b)
+b,a=a,b
+print("after change a=",a,"b=",b)
